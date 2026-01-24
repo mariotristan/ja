@@ -7,12 +7,12 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #ecf0f1;
     line-height: 1.6;
 }
 
@@ -23,24 +23,20 @@ body {
 }
 
 header h1 {
-    color: white;
-    font-size: 2.5em;
+    color: #bdc3c7;
+    font-size: 2.2em;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: -0.5px;
 }
 
 .counter-card {
-    background: white;
-    border-radius: 20px;
+    background: #34495e;
+    border-radius: 12px;
     padding: 40px 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
-
-.counter-card:hover {
-    transform: translateY(-5px);
+    border: 1px solid #4a5568;
 }
 
 .days-display {
@@ -48,23 +44,15 @@ header h1 {
 }
 
 .days-number {
-    font-size: 4em;
-    font-weight: bold;
-    color: #4CAF50;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #5dade2;
     display: block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
 }
 
 .days-label {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.1em;
+    color: #95a5a6;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -73,18 +61,19 @@ header h1 {
 .milestone-info {
     margin-bottom: 30px;
     padding: 20px;
-    background: #f8f9fa;
-    border-radius: 15px;
-    border-left: 4px solid #4CAF50;
+    background: #2c3e50;
+    border-radius: 8px;
+    border-left: 3px solid #5dade2;
 }
 
 .milestone-info p {
     margin-bottom: 10px;
     font-size: 1.1em;
+    color: #bdc3c7;
 }
 
 .milestone-info strong {
-    color: #2196F3;
+    color: #85c1e9;
 }
 
 .progress-section {
@@ -92,67 +81,49 @@ header h1 {
 }
 
 .milestone {
-    font-size: 1.2em;
-    color: #4CAF50;
-    font-weight: 600;
+    font-size: 1.1em;
+    color: #5dade2;
+    font-weight: 500;
     margin-bottom: 20px;
     padding: 15px;
-    background: linear-gradient(45deg, #E8F5E8, #F0F8F0);
-    border-radius: 10px;
-    border: 2px solid #4CAF50;
+    background: #2c3e50;
+    border-radius: 8px;
+    border: 1px solid #5dade2;
 }
 
 .progress-bar {
     width: 100%;
-    height: 12px;
-    background: #e0e0e0;
-    border-radius: 6px;
+    height: 8px;
+    background: #4a5568;
+    border-radius: 4px;
     overflow: hidden;
     margin-bottom: 15px;
 }
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #4CAF50, #66BB6A);
-    border-radius: 6px;
+    background: #5dade2;
+    border-radius: 4px;
     transition: width 0.5s ease;
-    position: relative;
-}
-
-.progress-fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    animation: shine 2s infinite;
-}
-
-@keyframes shine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
 }
 
 .motivational-quotes {
     padding: 20px;
-    background: linear-gradient(45deg, #E3F2FD, #F3E5F5);
-    border-radius: 15px;
-    border-left: 4px solid #2196F3;
+    background: #2c3e50;
+    border-radius: 8px;
+    border-left: 3px solid #85c1e9;
 }
 
 .quote {
     font-style: italic;
-    color: #555;
-    font-size: 1.1em;
+    color: #95a5a6;
+    font-size: 1em;
     line-height: 1.5;
 }
 
 footer {
-    color: white;
-    font-size: 1.1em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #95a5a6;
+    font-size: 1em;
     margin-top: 20px;
 }
 
@@ -163,11 +134,11 @@ footer {
     }
     
     header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     
     .days-number {
-        font-size: 3em;
+        font-size: 2.8em;
     }
     
     .counter-card {
@@ -177,26 +148,19 @@ footer {
 
 /* Special milestone styles */
 .milestone.week {
-    background: linear-gradient(45deg, #FFF3E0, #FFECB3);
-    border-color: #FF9800;
-    color: #FF9800;
+    background: #3e3e2f;
+    border-color: #f39c12;
+    color: #f7dc6f;
 }
 
 .milestone.month {
-    background: linear-gradient(45deg, #F3E5F5, #E1BEE7);
-    border-color: #9C27B0;
-    color: #9C27B0;
+    background: #3e2f3e;
+    border-color: #8e44ad;
+    color: #bb8fce;
 }
 
 .milestone.hundred {
-    background: linear-gradient(45deg, #FFEBEE, #FFCDD2);
-    border-color: #F44336;
-    color: #F44336;
-    animation: celebrate 1s ease-in-out;
-}
-
-@keyframes celebrate {
-    0%, 100% { transform: scale(1); }
-    25% { transform: scale(1.05) rotate(2deg); }
-    75% { transform: scale(1.05) rotate(-2deg); }
+    background: #3e2f2f;
+    border-color: #e74c3c;
+    color: #f1948a;
 }
