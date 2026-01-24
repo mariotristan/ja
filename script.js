@@ -1,5 +1,5 @@
 // Last gambling date: January 16, 2026
-const lastGamblingDate = new Date('2026-01-16');
+const lastGamblingDate = new Date('2026-01-17');
 
 // Motivational quotes array
 const quotes = [
