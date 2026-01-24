@@ -33,7 +33,7 @@ function updateDisplay() {
     
     // Update current date
     document.getElementById('current-date').innerHTML = 
-        `Today: <strong>${today.toLocaleDateString('en-US', { 
+        `Current Date: <strong>${today.toLocaleDateString('en-US', { 
             weekday: 'long', 
             year: 'numeric', 
             month: 'long', 
@@ -58,34 +58,34 @@ function updateMilestone(days) {
     milestoneElement.classList.remove('week', 'month', 'hundred');
     
     if (days === 0) {
-        milestoneElement.textContent = "Day one starts now! You've got this! 🌟";
+        milestoneElement.textContent = "Recovery journey begins today.";
     } else if (days === 1) {
-        milestoneElement.textContent = "Amazing! Your first full day! 🎉";
+        milestoneElement.textContent = "First day completed successfully.";
     } else if (days === 7) {
-        milestoneElement.textContent = "🎉 One week milestone achieved! 🎉";
+        milestoneElement.textContent = "One week milestone achieved.";
         milestoneElement.classList.add('week');
     } else if (days === 30) {
-        milestoneElement.textContent = "🏆 One month strong! Incredible! 🏆";
+        milestoneElement.textContent = "One month of sustained recovery.";
         milestoneElement.classList.add('month');
     } else if (days === 90) {
-        milestoneElement.textContent = "🌟 Three months! You're unstoppable! 🌟";
+        milestoneElement.textContent = "Three months of consistent progress.";
         milestoneElement.classList.add('month');
     } else if (days === 100) {
-        milestoneElement.textContent = "💯 100 DAYS! Triple digits! 💯";
+        milestoneElement.textContent = "100-day milestone reached.";
         milestoneElement.classList.add('hundred');
     } else if (days === 365) {
-        milestoneElement.textContent = "🎊 ONE YEAR! AMAZING! 🎊";
+        milestoneElement.textContent = "One year of recovery completed.";
         milestoneElement.classList.add('hundred');
     } else if (days % 30 === 0 && days > 30) {
         const months = Math.floor(days / 30);
-        milestoneElement.textContent = `🏅 ${months} months strong! Keep going! 🏅`;
+        milestoneElement.textContent = `${months} months of sustained progress.`;
         milestoneElement.classList.add('month');
     } else if (days % 7 === 0 && days > 7) {
         const weeks = Math.floor(days / 7);
-        milestoneElement.textContent = `✨ ${weeks} weeks completed! ✨`;
+        milestoneElement.textContent = `${weeks} weeks completed.`;
         milestoneElement.classList.add('week');
     } else {
-        milestoneElement.textContent = "Keep going! Every day counts 💪";
+        milestoneElement.textContent = "Maintaining progress. Every day matters.";
     }
 }
 
