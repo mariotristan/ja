@@ -12,7 +12,27 @@ const quotes = [
     "Recovery is not about being perfect, it's about being persistent.",
     "The pain of discipline weighs ounces, but the pain of regret weighs tons.",
     "You've survived 100% of your worst days. You're doing great.",
-    "Healing is not linear, but every day forward is progress."
+    "Healing is not linear, but every day forward is progress.",
+    "Courage doesn't always roar. Sometimes it's the quiet voice that says 'I will try again tomorrow'.",
+    "The only impossible journey is the one you never begin.",
+    "It does not matter how slowly you go as long as you do not stop.",
+    "Success is the sum of small efforts repeated day in and day out.",
+    "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "You don't have to be great to get started, but you have to get started to be great.",
+    "The comeback is always stronger than the setback.",
+    "Every master was once a disaster.",
+    "Fall seven times, rise eight.",
+    "You didn't come this far to only come this far.",
+    "Small steps in the right direction can turn out to be the biggest step of your life.",
+    "Recovery is an acceptance that your life is in shambles and you have to change it.",
+    "The greatest revolution of our generation is the discovery that human beings can alter their lives.",
+    "Strength grows in the moments when you think you can't go on but you keep going anyway.",
+    "Recovery is about progression, not perfection.",
+    "The first step toward recovery is admitting you have a problem.",
+    "You are not your mistakes. You are not your struggles. You are here now with the power to shape your day.",
+    "The only way out is through.",
+    "Recovery is a process. It takes time. It takes patience. It takes everything you've got.",
+    "You have been assigned this mountain to show others it can be moved."
 ];
 
 // Function to calculate days without gambling
