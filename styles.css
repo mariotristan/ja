@@ -1,0 +1,202 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+
+.counter-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-5px);
+}
+
+.days-display {
+    margin-bottom: 30px;
+}
+
+.days-number {
+    font-size: 4em;
+    font-weight: bold;
+    color: #4CAF50;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.days-label {
+    font-size: 1.2em;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.milestone-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 4px solid #4CAF50;
+}
+
+.milestone-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.milestone-info strong {
+    color: #2196F3;
+}
+
+.progress-section {
+    margin-bottom: 30px;
+}
+
+.milestone {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(45deg, #E8F5E8, #F0F8F0);
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #66BB6A);
+    border-radius: 6px;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.motivational-quotes {
+    padding: 20px;
+    background: linear-gradient(45deg, #E3F2FD, #F3E5F5);
+    border-radius: 15px;
+    border-left: 4px solid #2196F3;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+footer {
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .days-number {
+        font-size: 3em;
+    }
+    
+    .counter-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Special milestone styles */
+.milestone.week {
+    background: linear-gradient(45deg, #FFF3E0, #FFECB3);
+    border-color: #FF9800;
+    color: #FF9800;
+}
+
+.milestone.month {
+    background: linear-gradient(45deg, #F3E5F5, #E1BEE7);
+    border-color: #9C27B0;
+    color: #9C27B0;
+}
+
+.milestone.hundred {
+    background: linear-gradient(45deg, #FFEBEE, #FFCDD2);
+    border-color: #F44336;
+    color: #F44336;
+    animation: celebrate 1s ease-in-out;
+}
+
+@keyframes celebrate {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.05) rotate(2deg); }
+    75% { transform: scale(1.05) rotate(-2deg); }
+}
