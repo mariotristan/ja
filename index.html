@@ -7,41 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="language-selector">
+        <span class="lang-label">Language:</span>
+        <button type="button" id="lang-en" class="lang-btn active" data-lang="en">
+            <span class="flag">🇺🇸</span> English
+        </button>
+        <button type="button" id="lang-es" class="lang-btn" data-lang="es-MX">
+            <span class="flag">🇲🇽</span> Español
+        </button>
+    </div>
+
     <div class="container">
         <header>
-            <h1>Recovery Tracker</h1>
+            <h1 data-i18n="title">Recovery Tracker</h1>
         </header>
         
         <main>
             <div class="counter-card">
                 <div class="days-display">
                     <span id="days-count" class="days-number">0</span>
-                    <span class="days-label">Days Strong</span>
+                    <span class="days-label" data-i18n="daysStrong">Days Strong</span>
                 </div>
-                
+
                 <div class="milestone-info">
-                    <p>Recovery Start Date: <strong>January 16, 2026</strong></p>
-                    <p id="current-date">Current Date: <strong></strong></p>
+                    <p><span data-i18n="recoveryStartDate">Recovery Start Date:</span> <strong>January 16, 2026</strong></p>
+                    <p id="current-date"><span data-i18n="currentDate">Current Date:</span> <strong></strong></p>
                 </div>
-                
+
                 <div class="progress-section">
                     <div class="milestone" id="milestone-text">
                         Maintaining progress. Every day matters.
                     </div>
-                    
+
                     <div class="progress-bar">
                         <div class="progress-fill" id="progress-fill"></div>
                     </div>
                 </div>
-                
+
                 <div class="motivational-quotes">
                     <p id="quote" class="quote">"The best time to plant a tree was 20 years ago. The second best time is now."</p>
                 </div>
             </div>
         </main>
-        
+
         <footer>
-            <p>Commitment to Recovery</p>
+            <p data-i18n="footer">Commitment to Recovery</p>
         </footer>
     </div>
     
