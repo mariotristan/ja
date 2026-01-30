@@ -53,7 +53,7 @@ const translations = {
     },
     'es-MX': {
         title: 'Seguimiento de Recuperación',
-        daysStrong: 'Días Fuertes',
+        daysStrong: 'Días de Fortaleza',
         recoveryStartDate: 'Fecha de Inicio de Recuperación:',
         currentDate: 'Fecha Actual:',
         footer: 'Compromiso con la Recuperación',
@@ -161,7 +161,7 @@ function applyTranslations(lang) {
     updateDisplay();
 }
 
-// Last gambling date: January 16, 2026
+// Recovery start date: January 17, 2026
 const lastGamblingDate = new Date('2026-01-17');
 
 
@@ -183,6 +183,15 @@ function updateDisplay() {
 
     // Determine locale based on current language
     const locale = currentLang === 'es-MX' ? 'es-MX' : 'en-US';
+
+    // Update recovery start date
+    const recoveryDateLabel = translations[currentLang].recoveryStartDate;
+    document.getElementById('recovery-date').innerHTML =
+        `<span data-i18n="recoveryStartDate">${recoveryDateLabel}</span> <strong>${lastGamblingDate.toLocaleDateString(locale, {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        })}</strong>`;
 
     // Update current date
     const currentDateLabel = translations[currentLang].currentDate;
