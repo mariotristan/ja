@@ -208,6 +208,19 @@ footer {
     letter-spacing: 1px;
 }
 
+footer a {
+    color: #5dade2;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(93, 173, 226, 0.3);
+}
+
+footer a:hover {
+    color: #85c1e9;
+    border-bottom-color: #85c1e9;
+}
+
 /* Responsive design */
 @media (max-width: 600px) {
     .container {
