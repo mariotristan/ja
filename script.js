@@ -162,7 +162,7 @@ function applyTranslations(lang) {
 }
 
 // Recovery start date: January 17, 2026
-const lastGamblingDate = new Date('2026-03-17');
+const lastGamblingDate = new Date('2026-03-26');
 
 
 // Function to calculate days without gambling
